@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        div.conteiner {
+            background-color: tomato;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: turquoise;
+            border: 1px solid rgba(0, 0, 0, 0.418);
+            text-align: center;
+            padding: 5px;
+            flex-basis: 150px;
+        }
+        div#i1 {
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        div#i2 {
+            flex-grow: 2;
+            flex-shrink: 0; 
+        }
+        div#i3 {
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+        div#i4 {
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+        div#i5 {
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+    </div>
+</body>
+</html>

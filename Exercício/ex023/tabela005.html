@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            padding: 10px;
+            font-weight: bolder;
+        }
+        thead {
+            font-weight: bolder;        
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .dstq {
+        }
+        .cnome{
+            background-color: burlywood;
+        }
+        .amarelo {
+            background-color: red;
+        }
+        .vermelho {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        </colgroup>
+        <caption> Cadastro</caption>
+            <tr>
+                <thead>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   <td>Ana Maria</td>
+                   <td>F</td>
+                   <td>25</td>
+                   <td>Jornalista</td> 
+                </tr>
+                <tr>
+                    <td>Claudio</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>Progamador</td>
+                </tr>
+                <tr class="dstq">
+                    <td>Gusmão</td>
+                    <td>M</td>
+                    <td>24</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Hélio</td>
+                    <td>M</td>
+                    <td>19</td>
+                    <td>Advogado</td>
+                </tr>
+                <tr  class="dstq">
+                    <td>Edgar</td>
+                    <td>M</td>
+                    <td>23</td>
+                    <td>Humorista</td>
+                </tr>
+            </tbody>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: normal 16px Arial;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+   grid-template-rows: 80px 40px 1fr 40px;
+   grid-template-columns: 1fr 150px;
+   gap: 5px;
+}
+
+.caixa {
+    background-color: mintcream;
+    border: 1px solid rgba(0, 0, 0, 0.216);
+    text-align: center;
+    padding: 10px;
+}
+
+#topo {
+    grid-area: 1 / 1 / 2 / span 2;
+}
+
+#menu {
+    grid-area: 2 / 1 / 3 / span 2;
+}
+
+#prinncipal {
+    grid-area: 3 / 1 / -2 / 2;
+}
+
+#secundario {
+    grid-area: 3 / 2 / -2 / 3;
+}
+
+#rodape {
+    grid-area: 4 / 1 / 5 / 3;
+}
